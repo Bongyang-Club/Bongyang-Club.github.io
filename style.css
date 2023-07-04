@@ -89,7 +89,7 @@ body {
 .content .sub-title {
   font-weight: 500;
   font-size: 18px;
-  margin: 10px 0 10px;
+  margin: 20px 0 10px;
 }
 
 .profiles {
@@ -136,7 +136,7 @@ body {
 }
 
 .profile .img {
-  margin: 10px auto;
+  margin: 20px auto 25px;
   width: 200px;
   height: 200px;
 }
@@ -144,8 +144,13 @@ body {
 .profile .img img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 10px;
   overflow: hidden;
+}
+
+.process img {
+  width: 700px;
+  height: auto;
 }
 
 .layouts {
@@ -164,11 +169,11 @@ body {
 }
 
 .database img {
-  width: 500px;
+  width: 600px;
   height: auto;
 }
 
 .userscenario img {
-  width: 500px;
+  width: 600px;
   height: auto;
 }
