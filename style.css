@@ -95,6 +95,7 @@ body {
 .profiles {
   display: flex;
   flex-direction: row;
+  overflow-x: auto;
 }
 
 .profile {
@@ -149,7 +150,8 @@ body {
 }
 
 .process img {
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   height: auto;
 }
 
@@ -164,16 +166,70 @@ body {
 }
 
 .layout img {
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   height: auto;
 }
 
 .database img {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   height: auto;
 }
 
 .userscenario img {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   height: auto;
+}
+
+.phone {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 10px;
+    height: calc(100% - 20px);
+  }
+  .desktop {
+    display: none;
+  }
+  .phone {
+    display: flex;
+  }
+  .container {
+    height: calc(100% - 71px);
+    padding: 71px 0 0 0;
+    /* padding: 50; */
+  }
+  .header {
+    max-width: 800px;
+    height: auto;
+    position: static;
+    border: none;
+  }
+  .header .header-content {
+    flex-direction: column;
+  }
+  .header-content .title {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .header-content .link {
+    flex-direction: column;
+  }
+  .contents {
+    margin: -40px 10px 0;
+    width: calc(100% - 20px);
+  }
 }
