@@ -197,6 +197,12 @@ body {
   }
   .phone {
     display: flex;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .phone a {
+    max-width: none;
+    width: calc(100% - 40px);
   }
   .container {
     height: calc(100% - 71px);
